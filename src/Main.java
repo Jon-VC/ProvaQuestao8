@@ -4,6 +4,7 @@ public class Main {
 
         Metodos.Cadastrar();
 
+        Metodos.folha();
 
     }
 }
