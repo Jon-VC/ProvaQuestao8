@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Metodos {
 
+    //Cadastra quantidade de entradas, usuario e salario
     public static void Cadastrar() {
         System.out.println("Quantos funcionários deseja cadastrar?");
         Scanner s = new Scanner(System.in);
@@ -26,6 +27,7 @@ public class Metodos {
         }
     }
 
+    //Imprime na tela a folha final com os dados
     public static void folha() {
         for (int i = 0; i < Pessoa.funcionarios.size(); i++){
             System.out.println("Funcionário: " + Pessoa.funcionarios.get(i));
@@ -34,6 +36,7 @@ public class Metodos {
         }
     }
 
+    //faz os calculos do abono\disconto e o salario liquido do funcionario
     private static void calculoVarianca(int i) {
         double abono;
         double desconto;
